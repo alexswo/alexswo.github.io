@@ -1,13 +1,15 @@
-import React, { Fragment } from 'react';
-import Body from './Body/Body';
+import React, { Fragment } from "react";
+import Body from "./Body/Body";
 
-import './App.css';
-// https://github.com/artsy/force/blob/main/src/Components/FullBleedHeader/FullBleedHeader.tsx
+import "./App.css";
+
 function App() {
   return (
     <Fragment>
       <header></header>
-      <main><Body/></main>
+      <main>
+        <Body />
+      </main>
     </Fragment>
   );
 }
