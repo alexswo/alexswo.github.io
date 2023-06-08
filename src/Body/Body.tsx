@@ -1,9 +1,6 @@
-import { Icon } from "@iconify/react";
-
 import "./Body.css";
-import { Fragment, useEffect, useState } from "react";
-//
-// https://www.netguru.com/blog/react-native-heart-animation
+import { useEffect } from "react";
+
 function Body() {
   useEffect(() => {
     fetch(
@@ -16,11 +13,6 @@ function Body() {
         console.log(err.message);
       });
   }, []);
-
-  const [liked, setLiked] = useState(false);
-  const onHeartPress = () => {
-    setLiked((prevStateOfLike) => !prevStateOfLike);
-  };
 
   const year = new Date().getFullYear();
 
@@ -39,8 +31,8 @@ function Body() {
           <a className="link" href="https://www.linkedin.com/in/alexoh2">
             LinkedIn
           </a>
-          <a className="link" href="https://github.com/alexswo">
-            Projects
+          <a className="link" href="/">
+            Open Source
           </a>
         </div>
       </section>
